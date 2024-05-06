@@ -1,5 +1,5 @@
 ### EX8 Web Scraping On E-commerce platform using BeautifulSoup
-### DATE: 
+### DATE: 05/05/24
 ### AIM: To perform Web Scraping on Amazon using (beautifulsoup) Python.
 ### Description: 
 <div align = "justify">
@@ -14,7 +14,6 @@ One can search, navigate, and modify data using a parser. It’s versatile and s
 <p>4) Transformation
 
 ### Procedure:
-
 1) Import necessary libraries (requests, BeautifulSoup, re, matplotlib.pyplot).
 2) Define convert_price_to_float(price) Function: to Remove non-numeric characters from a price string and convert it to a float.
 3) Define get_amazon_products(search_query) Function: to Scrape Amazon for product information based on the search query.
@@ -30,7 +29,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import matplotlib.pyplot as plt
-
 def convert_price_to_float(price):
     # Remove currency symbols and commas, and then convert to float
     price = re.sub(r'[^\d.]', '', price)  # Remove non-digit characters except '.'
@@ -71,9 +69,8 @@ if products:  # Check if products list is not empty
     plt.show()
 else:
     print('No products found.')
-
 ```
-
 ### Output:
-
+![image](https://github.com/SWETHA6302/WDM_EXP8/assets/127874947/79a4a723-3117-4ceb-8456-791dd25aec4f)
 ### Result:
+Thus Web Scraping On e-commerce platform using BeautifulSoup is executed successfully.
